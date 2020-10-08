@@ -1,0 +1,758 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+
+* {
+    width: 100%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  
+}
+body{
+    
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    overflow-x: hidden;
+}
+
+
+
+
+
+/*nav and logo*/
+
+header {
+    background-color: rgb(14, 100, 92, 0.4 );
+    height: 8vh;
+    width: 100%;
+    display: flex;
+  
+}
+
+ul {
+display: flex;
+text-decoration: none;
+list-style: none;
+}
+
+body header div nav ul li a {
+    list-style: none;
+    text-decoration: none;
+    color:#F1EFD4 ;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 40px;
+}
+
+.logo img {
+    height: 9vh;
+    width: 10vh;
+
+}
+
+nav li a {
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+nav li a:hover:not(.active) {
+    background-color: #FFC933;
+}
+
+/*end nav and logo*/
+
+h1, h2, h3 {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+ font-size: 90px;   
+}
+
+h2 {font-size: 30px;}
+
+h3 {
+    font-size: 20px;
+    text-align: center;
+    
+}
+.maintext h3 {
+    text-align: left;
+}
+
+.yellow {
+    color:  #FFC933;
+}
+
+.green {
+    background-color: rgb(14, 100, 92, 0.4 );
+}
+
+
+.maintext {
+    grid-area: maintext;
+    width: 100%;
+    margin: 20% 0% 0% 10%;
+    }
+
+    .mainpic { 
+    grid-area: mainpic;
+    margin: 0% 0% 20% 0%;
+}
+.mainpic img {
+    max-width: 100%; 
+    height: 90vh;
+    width: auto;
+}
+.sectiontitle,  .sectiontitle1 h2 {
+    color: #FFC933;
+    padding: 2%;
+
+}
+
+
+.border {
+    border: none;
+    border-bottom: #FFC933 0.5vh solid;
+    width: 70%;
+    margin-left: 15%;
+    text-align: center;
+    grid-area: border;
+}
+
+.border33 {
+    border: none;
+    border-bottom: #FFC933 0.5vh solid;
+    width: 70%;
+    text-align: center;
+    grid-area: border33;
+    margin-left: 15%;
+}
+.border44 {
+    border: none;
+    border-bottom: #FFC933 0.5vh solid;
+    width: 70%;
+    text-align: center;
+    grid-area: border44;
+    margin-left: 15%;
+}
+.border55 {
+    border: none;
+    border-bottom: #FFC933 0.5vh solid;
+    width: 70%;
+    text-align: center;
+    grid-area: border55;
+    margin-left: 15%;
+}
+
+.sectiontitle {
+    grid-area: sectiontitle;
+    text-align: center;
+}
+
+.containerandtitle1 {
+  grid-area:  containerandtitle1;
+  width: 90%;
+  height: 90vh;
+margin-left: 5%;
+}
+
+.containerandtitle2 {
+    grid-area:  containerandtitle2;
+    width: 90%;
+    height: 90vh;
+    margin-left: 5%;
+  }
+
+.containerandtitle3 {
+    grid-area:  containerandtitle3;
+    width: 90%;
+    height: 90vh;
+    margin-left: 5%;
+}
+
+.sectiontitle1 {
+    grid-area: sectiontitle1;
+    text-align: center;
+   font-size: 50px;
+  
+}
+
+.containerandpicture1 {
+    grid-area: containerandpicture1 ;
+    width: 90%;
+    height: 90vh;
+    margin-left: 5%;
+}
+.containerandpicture2 {
+    grid-area: containerandpicture2 ;
+    width: 90%;
+    height: 90vh;
+    margin-left: 5%;
+   
+    
+}
+.containerandpicture3 {
+    grid-area: containerandpicture3 ;
+    width: 90%;
+    height: 90vh;
+    margin-left: 5%;
+}
+
+
+.container1 , .container2 , .container3 {
+    background-size: contain;
+  
+    padding: 30% 20% 30% 20% ;
+    background-position: center;
+   place-content: center;
+    background-repeat: no-repeat;
+    font-size: 20px;
+    
+}
+.container1 , .container2 , .container3{
+    transition: all .2s ease-in-out; 
+}
+.container1:hover , .container2:hover , .container3:hover {
+     transform: scale(1.1); 
+}
+
+.container1 {  
+    background-image: url(../images/xdlogo.png);
+    width: 100%;
+    
+}
+.container2 {
+    background-image: url(../images/exlogo.png);
+    width: 100%;
+   
+}
+.container3 {
+   
+    background-image: url(../images/codelogo.png);
+    width: 100%;
+   
+}
+
+.title1 {
+    grid-area: title1;
+    width: 100%;
+}
+
+
+.containerandpicture1 .container1 {
+    background-image: url(../images/dpromo.png);
+    width: 100%;
+    height:70%;
+    margin: 13% 0 0 0 ;
+ 
+}
+.containerandpicture2 .container2 {
+    background-image: url(../images/spromo.png);
+    width: 100%;
+    height:70%;
+    margin: 13% 0 0 0 ;
+}
+.containerandpicture3 .container3 {
+    background-image: url(../images/fpromo.png);
+    width: 100%;
+    height:70%;
+    margin: 13% 0 0 0 ;
+}
+
+.gridone {
+    display: grid;
+    grid-template-areas:
+    
+    'border33 border33 border33'
+    'sectiontitle sectiontitle sectiontitle'
+    'containerandtitle1 containerandtitle2 containerandtitle3'
+    'border44 border44 border44'
+    'sectiontitle1 sectiontitle1 sectiontitle1'
+    'containerandpicture1 containerandpicture2 containerandpicture3'
+    'border55 border55 border55'
+
+    ;
+    grid-template-columns: repeat(3,1fr);
+    width: 100%;
+  }
+.gridhero {
+    display: grid;
+    grid-template-areas:
+    'maintext  mainpic' ;
+    grid-template-columns: 60% auto;
+}
+
+
+     /*footer*/
+     /*
+button {
+    background-color: #0E645C; 
+    border: none;
+    color:  white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+   
+    width: 20%;
+    height: 20%;
+  }
+ .but {
+   text-align: center;
+   padding-top: 5%;
+   padding-bottom: 5%;
+  width: 100%;
+   
+     
+ }
+ .but { transition: all .2s ease-in-out; }
+ .but:hover { transform: scale(1.1); }
+/*footer end*/
+
+
+
+
+/*page 2*/
+
+.gridtwo{
+    display: grid;
+    grid-template-areas:
+
+        'me me1 me1'
+        'border border border'
+        'me11 me11 meme'
+        'border1 border1 border1'
+        
+        
+    ;
+    grid-template-columns: repeat(3,1fr);
+    width: 100%;
+
+}
+
+.me {
+    padding-top: 10vh;
+    margin-bottom: 10vh;
+    grid-area: me;
+   display: block;
+    width: 100%;
+
+    height:80vh;
+}
+.me1 {
+  
+    grid-area: me1;
+    display: block;
+    width: 100%;
+   padding: 10vh 5vh 0 10vh;
+    height:80vh;
+}
+
+
+.me h1 , .meme h1 {
+    border: 4px solid rgb(14, 100, 92, 0.4 );
+    height: 70vh;
+    color: #FFC933;
+    padding-left:5%;
+}
+
+.content1 {
+    background-color: rgb(14, 100, 92, 0.4 );
+    height: 20vh;
+    padding: 20px;
+}
+.gap {
+    padding: 5vh 0  5vh 0;
+}
+
+.meme{
+    grid-area: meme;
+    display: block;
+     width: 100%;
+ 
+     height:80vh;
+     padding-top: 10vh;
+    margin-bottom: 10vh;
+}
+.me11 {
+    grid-area: me11;
+    display: block;
+     width: 100%;
+     padding: 10vh 10vh 0 5vh;
+     height:80vh;
+     
+}
+
+.section11 .border {
+    padding-top: 5vh;
+
+}
+
+.border1{
+    border: none;
+    border-bottom: #FFC933 0.5vh solid;
+    width: 70%;
+    text-align: center;
+    margin-left: 15%;
+    grid-area: border1;
+}
+
+/*third page*/
+/*
+
+.yourname {
+    grid-area: yourname;
+}
+.youremail {
+    grid-area: youremail;
+}
+.textarea {
+    grid-area: textarea;
+}
+.border100 {
+    grid-area: border100;
+}
+
+.confirm {
+    grid-area: confirm ; 
+}
+
+ .gridy {
+    display: grid;
+    grid-template-areas:
+
+    'yourname youremail'
+    'textarea textarea'
+    'confirm confirm'
+    'border100 border100'
+    ;
+
+    grid-template-columns: repeat(2,1fr);
+    
+    width: 100%;
+
+}
+
+.border100 {
+    grid-area: border100;
+}
+
+.maindesign {
+     padding-right: 10%;
+     padding-left: 10%;
+     padding-top: 10%;
+     font-family: 'Montserrat', sans-serif;
+     color: #FFC933;
+    }
+
+input[type=text] , textarea {
+      
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 4px;
+    background-color: rgb(14, 100, 92, 0.4 );
+    color: white;
+    outline: none;      
+}
+
+input[type=text]:focus , textarea:focus , .btn:focus{
+    border: 3px solid #FFC933;
+}
+
+.yourname , .youremail {
+    width: 95%;
+}
+.youremail {
+    margin-left: 5%;
+}
+
+
+.textarea {
+    grid-area: textarea;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    resize: none;
+       
+}
+.textarea {
+    padding-top: 3%;
+}
+     */ 
+/*.btn {
+
+    background-color: rgb(14, 100, 92, 0.4 );
+    border: none;
+    color:  white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    width: 20%;
+    height: 20%;
+    outline: none;
+    border-radius: 4px;
+    }
+
+.confirm {
+    grid-area: confirm;
+    text-align: center;
+    padding-top: 3%;
+       }
+
+.extrafooter {
+    padding-top: 1%;
+    text-align: center;
+} 
+
+*/
+
+.footinfo {
+    text-align: center;
+    padding: 5%;
+    font-size: large;
+      font-family: 'Montserrat', sans-serif;
+}
+
+       /*my work*/
+
+
+
+.supergrid {
+     display: grid;
+     grid-template-areas:
+        
+    'myintro intro1 intro1'
+    'border100 border100 border100'
+    'diabpic1 diabtext1 diabtext1'
+    'diabtext2 diabtext2 diabpic2'
+    'diabpic3 diabtext3 diabtext3'
+    'border101 border101 border101'
+    'swelepic1 sweletext1 sweletext1'
+    'sweletext2 sweletext2 swelepic2'
+    'swelepic3 sweletext3 sweletext3'
+    'border111 border111 border111'
+    'festpic1 festtext1 festtext1'
+    'festtext2 festtext2 festpic2'
+    'festpic3 festtext3 festtext3'
+    'border1111 border1111 border1111'
+    ;
+    grid-template-columns: repeat(3,1fr);
+    width: 100%;
+}
+
+.myintro {
+    padding-top: 10vh;
+    margin-bottom: 10vh;
+    grid-area: myintro;
+   display: block;
+    width: 100%;
+    height:80vh;
+
+}
+
+.intro1 {
+    grid-area: intro1;
+    display: block;
+    width: 100%;
+   padding: 10vh 5vh 0 10vh;
+    height:80vh;
+}
+
+
+
+.myintro h1, .intro1 h1 {
+    border: 4px solid #0E645C;
+    height: 70vh;
+    color: #FFC933;
+    padding-left: 5%;
+}
+
+.content1{
+    background-color: #062825;
+    height: 20vh;
+    padding: 20px;
+}
+
+
+.border100 {
+    border: none;
+    border-bottom: #FFC933 0.5vh solid;
+    width: 70%;
+    margin-left: 15%;
+    text-align: center;
+    grid-area: border100;
+}
+.border101 {
+    grid-area: border101 ;
+
+}
+.border111{
+    grid-area: border111;
+}
+.border1111 {
+    grid-area: border1111;
+}
+
+.border101 , .border111 , .border1111 {
+    border: none;
+    border-bottom: #FFC933 0.5vh solid;
+    width: 70%;
+    margin-left: 15%;
+    text-align: center;
+    margin-top: 2%;
+}
+
+
+
+.diabpic1{
+    grid-area:diabpic1;
+    background-image: url(../images/diabpic3.png);
+
+   
+}
+.diabtext1{
+    grid-area:diabtext1;
+
+}
+
+.diabpic2 {
+    grid-area: diabpic2;
+    background-image: url(../images/diabpic1.png);
+}
+
+.diabtext2{
+    grid-area: diabtext2;
+}
+
+.diabpic3 {
+    grid-area:diabpic3;
+    background-image: url(../images/diabpic2.png);
+}
+
+.diabtext3{ grid-area: diabtext3;     
+} 
+
+.sweletext1 {
+    grid-area: sweletext1;
+}
+
+.sweletext2 {
+    grid-area: sweletext2;
+}
+.sweletext3 {
+    grid-area: sweletext3;
+}
+
+.swelepic1 {
+    grid-area: swelepic1;
+    background-image: url(../images/swelepic1.png);
+}
+.swelepic2 {
+    grid-area: swelepic2;
+    background-image: url(../images/swelepic2.png);
+}
+.swelepic3 {
+    grid-area: swelepic3;
+    background-image: url(../images/swelepic3.png);
+}
+
+.festpic1 {
+    grid-area: festpic1;
+    background-image: url(../images/festpic2.png);
+}
+.festpic2 {
+    grid-area: festpic2;
+    background-image: url(../images/festpic1.png);
+}
+.festpic3 {
+    grid-area: festpic3;
+    background-image: url(../images/festpic3.png);
+}
+
+.festtext1 {
+    grid-area: festtext1; 
+}
+.festtext2 {
+    grid-area: festtext2; 
+}
+.festtext3 {
+    grid-area: festtext3; 
+}
+
+.diabpic1 , .diabpic3 , .swelepic1 , .swelepic3 , .festpic1 , .festpic3 {
+    height: 30vh;
+    background-color: yellow;
+    margin-top: 5%;
+    width: 70%;
+    margin-left:15%;
+
+    background-size: cover;
+    background-position: left;
+    place-content: center;
+    background-repeat: no-repeat;
+}
+
+.diabtext1 , .diabtext3 , .sweletext1 , .sweletext3 , .festtext1 , .festtext3 {
+    height: 30vh;
+   
+    margin-top: 2.5%;
+    margin-bottom: 3%;
+    width: 90%;
+} 
+
+.diabpic2 , .swelepic2 , .festpic2 {
+    height: 30vh;
+    background-color: yellow;
+    margin-top: 5%;
+    width: 70%;
+    margin-right: 15%;
+}
+
+.diabtext2 , .sweletext2 , .festtext2 {
+    height: 30vh;
+   
+    margin-top: 3%;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.supergrid h3  {
+    text-align: left;
+    padding: 2% 2% 0 2%;
+}
+
+.supergrid .intro1 p {
+    line-height: 20px;
+}
+
+.supergrid p {
+padding-left: 2%;
+padding-right: 2%;
+padding-top: 0;
+line-height: 25px;
+}
+
+.intro1 h2 {    
+    padding-bottom: 0;
+}
+.intro1 p {
+    margin-top: 0 ;
+    }
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
